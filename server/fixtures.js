@@ -2,7 +2,7 @@ if(Issues.find().count() === 0) {
 	Issues.insert({
 		type: 'Issue',
 		username: 'nstraub',
-		submit_date: '03-01-2015',
+		submit_date: new Date(),
 		task_id: '1',
 		process_name: 'Claims Appeals',
 		task_name: 'Review Claim Appeal',

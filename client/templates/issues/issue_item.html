@@ -2,6 +2,10 @@
 	<div class="issue">
 		<div class="issue-content">
 			<h3>{{description}} <span>{{process_name}}</span></h3>
+			<p>
+				submitted By {{username}}
+				{{#if currentUser}}<a href="{{pathFor 'issueEdit'}}">Edit</a>{{/if}}
+			</p>
 		</div>
 		<a href="{{pathFor 'issuePage'}}" class="discuss btn btn-default">View Issue</a>
 	</div>

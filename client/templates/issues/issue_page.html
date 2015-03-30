@@ -1,5 +1,47 @@
 <template name="issuePage">
-	<div class="issue-page page">
-		{{> issueItem}}
+	<div class="issue">
+		<div class="issue-content" style="width: 100%">
+			<div class="page-header">
+			  <h1>{{process_name}} <small>{{status}}</small></h1>
+			</div>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Issue Details</div>
+			  <div class="panel-body">
+					<dl class="dl-horizontal">
+					  <dt>Date Submitted</dt>
+					  <dd>{{submit_date}}</dd>
+					  <dt>Process Name</dt>
+					  <dd>{{process_name}}</dd>
+					  <dt>Task Name</dt>
+					  <dd>{{task_name}}</dd>
+					  <dt>Submitted By</dt>
+					  <dd>{{username}}</dd>
+					  <dt>Priority</dt>
+					  <dd>{{priority}}</dd>
+					  <dt>Description</dt>
+					  <dd>{{description}}</dd>
+					</dl>
+		    	</div>
+			</div>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">Resolution Details</div>
+			  <div class="panel-body">
+					<dl class="dl-horizontal">
+					  <dt>Due Date</dt>
+					  <dd>{{resolve_by}}</dd>
+					  <dt>Analysis</dt>
+					  <dd>{{analysis}}</dd>
+					  <dt>Estimated Effort</dt>
+					  <dd>{{estimated_effort}}</dd>
+					  <dt>Resolved On</dt>
+					  <dd>{{resolved_on}}</dd>
+					  <dt>Resolution</dt>
+					  <dd>{{resolution}}</dd>
+					  <dt>Fixed In Snapshot</dt>
+					  <dd>{{fixed_snapshot}}</dd>
+					</dl>
+		    	</div>
+			</div>
+		</div>
 	</div>
 </template>

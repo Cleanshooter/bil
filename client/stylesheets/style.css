@@ -9,7 +9,10 @@
 
 body {
   background: #eee;
-  color: #666666; }
+  color: #666666;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #315481, #fff 100%); }
 
 #main {
   position: relative;
@@ -21,10 +24,15 @@ body {
 }
 
 .navbar {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background: #fff; }
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px; }
+
+  .navbar-brand {
+    margin-right: -100px;
+  }
 
 #spinner {
   height: 300px; }
@@ -157,5 +165,11 @@ body {
   clear: both;
   margin-bottom: 5px;
   pointer-events: auto;
+}
+
+.logo {
+  float:left;
+  height:100%;
+  margin-right: 0.5em;
 }
 
